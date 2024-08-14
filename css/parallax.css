@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    color: black;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+section.module p {
+    margin-bottom: 40px;
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content {
+    padding: 40px 0;
+    background: #c4b6b6;
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*comando parallax*/
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+section.module.parallax::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+}
+
+
+section.module.parallax1 {
+    background-image: url(https://img.freepik.com/fotos-gratis/bela-foto-aerea-das-montanhas-de-fronalpstock-na-suica-sob-o-lindo-ceu-rosa-e-azul_181624-9315.jpg?w=740&t=st=1693004713~exp=1693005313~hmac=78dd8a52a99daf8002933c9cd2d8f7494b54e22f7a8c49e632725b5e85650088);
+}
+
+section.module.parallax2 {
+    background-image: url("https://img.freepik.com/fotos-gratis/vista-incrivel-de-uma-falesia-verde-perto-do-mar-no-arquipelago-dos-acores-portugal_181624-48407.jpg?w=740&t=st=1693003250~exp=1693003850~hmac=b74202860572bfe24acf841d99c36bf0ec6e3de39d914fcf88dfdc52d1cef955");
+}
+
+section.module.parallax3 {
+    background-image: url("https://img.freepik.com/fotos-gratis/figura-triangular-geometrica-legal-em-uma-luz-de-laser-neon-otima-para-fundos-e-papeis-de-parede_181624-9331.jpg?w=826&t=st=1693004741~exp=1693005341~hmac=e1cf3da454ad09e8017795958b14a3b40e33e2bf3a141a30f4b1f3cd1be6b780");
+}
+
+section.module.parallax h1 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    z-index: 50;
+    text-transform: uppercase;
+}
